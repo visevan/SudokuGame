@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Main {
@@ -7,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         SmallGrid a = new SmallGrid();
         BigGrid b = new BigGrid();
-        printMini(b.addGrid());
-
+        System.out.println(b.solveGrid());
+        printMini(b.getPartialGrid());
     }
 
     public static void printMini(int[][] miniMatrix) {
