@@ -1,16 +1,8 @@
-package com.company;
+package com.sudokugame;
 
-import java.util.Arrays;
-import java.util.LinkedList;
+public class Print {
 
-public class Main {
-
-    public static void main(String[] args) {
-        SmallGrid a = new SmallGrid();
-        BigGrid b = new BigGrid();
-        b.solveGrid();
-        printSmallGrid(b.getPartialGrid());
-        printGrid(b.getPartialGrid());
+    public Print() {
     }
 
     public static void printSmallGrid(int[][] smallGrid) {
@@ -43,4 +35,5 @@ public class Main {
         }
         System.out.println();
     }
+
 }

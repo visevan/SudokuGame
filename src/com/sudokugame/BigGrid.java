@@ -1,4 +1,4 @@
-package com.company;
+package com.sudokugame;
 
 /*Purpose of this class is to create a random 9x9 Sudoku grid that respects the rules of Sudoku.
 Solution:
@@ -105,6 +105,11 @@ public class BigGrid {
         }
 
         return !checkRow && !checkColumn && !check3x3Grid;
+    }
+
+    public int[][] solvedGrid(){
+        this.solveGrid();
+        return this.partialGrid;
     }
 
     public SmallGrid getSmallGrid() {

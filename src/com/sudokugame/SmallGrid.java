@@ -1,4 +1,4 @@
-package com.company;
+package com.sudokugame;
 
 import java.util.LinkedList;
 
@@ -14,7 +14,7 @@ public class SmallGrid {
     public int[][] createSmallGrid(){
 
         //Create a LinkedList with numbers from 1 to 9
-        LinkedList<Integer> bagOfNumbers = new LinkedList<Integer>();
+        LinkedList<Integer> bagOfNumbers = new LinkedList<>();
         for(int i = 1; i <= 9; i++){
             bagOfNumbers.add(i);
         }

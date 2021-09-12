@@ -1,6 +1,7 @@
-package com.company;
+package com.sudokugame;
 
 
+import java.util.concurrent.ThreadLocalRandom;
 
 /*
  In order to create different levels of difficulty for a Sudoku puzzle we do this:
@@ -11,6 +12,13 @@ package com.company;
 public class Difficulty {
 
     public Difficulty() {
+    }
+
+    public int[][] demo(int[][] unsolvedMatrix) {
+        int i = ThreadLocalRandom.current().nextInt(0, 9);
+        int j = ThreadLocalRandom.current().nextInt(0, 9);
+        unsolvedMatrix[i][j] = 0;
+        return unsolvedMatrix;
     }
 
     public int[][] easy(int[][] solvedGrid){
