@@ -1,2 +1,2 @@
 # SudokuGame
-A Sudoku Game
+WORK IN PROGRESS
