@@ -38,7 +38,7 @@ public class BigGrid {
         return partialGrid;
     }
 
-    //Search and return row and column where a 0 is found in the grid
+    //Search and return row and column where a 0 is found in the unsolved grid
     public int[] searchEmptyCell(int[][] partialGrid){
         int[] temp = new int[2];
         for(int i = 0; i < 9; i++){
@@ -52,7 +52,7 @@ public class BigGrid {
         }
         return null;
     }
-
+    //solve the partial completed grid using recursion
     public boolean solveGrid(){
         int[] temp = searchEmptyCell(partialGrid);
         if(temp != null){
@@ -60,11 +60,15 @@ public class BigGrid {
             int column = temp[1];
 
             for(int num = 1; num <= 9; num++){
+                //if Sudoku rules are met
                 if(checkConditions(partialGrid, row, column, num)){
+                    //add number where cell is empty
                     partialGrid[row][column] = num;
+                    //use recursion
                     if(solveGrid()){
                         return true;
                     }
+                    //go back and try a new number
                     partialGrid[row][column] = 0;
                 }
             }
