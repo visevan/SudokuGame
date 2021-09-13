@@ -14,11 +14,11 @@ public class Difficulty {
     public Difficulty() {
     }
 
-    public int[][] demo(int[][] unsolvedMatrix) {
+    public int[][] demo(int[][] solvedGrid) {
         int i = ThreadLocalRandom.current().nextInt(0, 9);
         int j = ThreadLocalRandom.current().nextInt(0, 9);
-        unsolvedMatrix[i][j] = 0;
-        return unsolvedMatrix;
+        solvedGrid[i][j] = 0;
+        return solvedGrid;
     }
 
     public int[][] easy(int[][] solvedGrid){
