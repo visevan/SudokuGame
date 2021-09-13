@@ -22,13 +22,6 @@ public class Print {
         char[] topBottomLocator = {'A','B','C','D','E','F','G','H','I'};
 
         for(int i = 0; i <= 8; ++i) {
-            if (i % 3 == 0) {
-                System.out.print(" ");
-            }
-            System.out.print(topBottomLocator[i]);
-        }
-
-        for(int i = 0; i <= 8; ++i) {
             System.out.println();
             if (i % 3 == 0) {
                 System.out.println();
