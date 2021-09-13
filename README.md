@@ -11,5 +11,4 @@ For this reason a GUI version is in work.
 
 ![image](https://user-images.githubusercontent.com/17747067/133142413-3988cf72-5b72-4b6f-8189-5229d21a604c.png)
 
-![image](https://user-images.githubusercontent.com/17747067/133142615-6e282dee-e3e2-442c-9aec-c42c16e22bde.png)
-
+![image](https://user-images.githubusercontent.com/17747067/133143413-04280130-3a2f-4796-8a92-ac12225be148.png)
