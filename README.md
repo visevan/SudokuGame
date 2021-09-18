@@ -1,5 +1,4 @@
 # SudokuGame
-WORK IN PROGRESS
 
 **Description**
 
